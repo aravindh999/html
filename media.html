@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+            audio,
+            video {
+                width: 50%;
+            }
+
+            iframe {
+                display: block;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <audio controls>
+                <source src="audiofile.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+            </audio>
+            <br />
+            <video width="400" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+                Your browser does not support the video element.
+            </video>
+            <br />
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/qz0aGYrrlhU"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+            <br />
+            <iframe
+                src="https://maps.google.com/maps?q=bengaluru&output=embed"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+            ></iframe>
+        </div>
+    </body>
+</html>
