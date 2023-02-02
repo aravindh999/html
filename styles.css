@@ -16,6 +16,9 @@ th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+tr:nth-child(odd) {
+    background-color: #9e9d9d;
+}
 
 ul {
     list-style-type: square;
