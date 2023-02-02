@@ -41,7 +41,7 @@ iframe {
     cursor: pointer;
     border-radius: 10px;
 }
-.nav a {
+a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
