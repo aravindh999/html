@@ -2,19 +2,34 @@
     <head>
         <title>Forms</title>
         <style>
+            body {
+                background-color: rgb(129, 187, 226);
+            }
+            .form-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
             .form {
                 width: 30%;
                 padding: 30px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
+                box-shadow: 0 1 10px #ddd;
+                background-color: rgba(168, 196, 218, 0.4);
             }
 
             .form-group {
                 margin-bottom: 25px;
+                display: flex;
+                flex-direction: column;
             }
 
             label {
                 font-weight: bold;
+                margin-bottom: 10px;
             }
 
             .form-control {
@@ -22,6 +37,7 @@
                 border-radius: 5px;
                 border: 1px solid #ccc;
                 width: 100%;
+                outline: none;
             }
 
             .btn {
@@ -31,6 +47,13 @@
                 color: #fff;
                 border: none;
                 cursor: pointer;
+                margin-top: 25px auto;
+            }
+
+            .btn:hover {
+                background-color: #fff;
+                color: #333;
+                box-shadow: 0 0 10px #333;
             }
         </style>
     </head>
@@ -47,6 +70,15 @@
                     />
                 </div>
                 <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter your email"
+                    />
+                </div>
+                <div class="form-group">
                     <label for="password">Password:</label>
                     <input
                         type="password"
@@ -55,7 +87,16 @@
                         placeholder="Enter your password"
                     />
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="confirm-password"
+                        placeholder="Confirm your password"
+                    />
+                </div>
+                <button type="submit" class="btn">Submit</button>
             </form>
         </div>
     </body>
